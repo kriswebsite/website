@@ -1047,3 +1047,38 @@ nav.scrolled {
         font-size: 1rem;
     }
 }
+
+
+
+
+.nav-link1 {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link1::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FF8C00;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+.nav-link1:hover::after {
+    width: 100%;
+}
+
+.nav-link1.active {
+    color: #FF8C00;
+}
+
+.nav-link1.active::after {
+    width: 100%;
+}
+
