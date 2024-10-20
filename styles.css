@@ -755,6 +755,8 @@ nav.scrolled {
     object-fit: contain;
 }
 
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav-menu {
@@ -866,7 +868,7 @@ nav.scrolled {
     }
 
     .scroll-top-img {
-        width: 150px; /* Same size as superhero1.png for consistency */
+        width: 90px; /* Same size as superhero1.png for consistency */
         height: auto;
     }
 }
