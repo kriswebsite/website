@@ -672,23 +672,47 @@ nav.scrolled {
     bottom: -10px;
 }
 
-#contact-form {
-    max-width: 600px;
-    margin: 0 auto;
+/* Contact Section Enhancements */
+.contact-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
 }
 
-.form-group {
+.contact-image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.hireme-img {
+    width: 100%;
+    height: auto;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hireme-img:hover {
+    transform: scale(1.05);
+}
+
+#contact-form {
+    flex: 2;
+}
+
+/* Adjustments for Form */
+#contact-form .form-group {
     margin-bottom: 20px;
 }
 
-.form-group label {
+#contact-form label {
     display: block;
     margin-bottom: 8px;
     font-size: 1rem;
 }
 
-.form-group input,
-.form-group textarea {
+#contact-form input,
+#contact-form textarea {
     width: 100%;
     padding: 12px 15px;
     border: none;
@@ -698,8 +722,8 @@ nav.scrolled {
     font-size: 1rem;
 }
 
-.form-group input::placeholder,
-.form-group textarea::placeholder {
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
     color: #bbb;
 }
 
@@ -754,8 +778,6 @@ nav.scrolled {
     height: auto;
     object-fit: contain;
 }
-
-
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -870,6 +892,25 @@ nav.scrolled {
     .scroll-top-img {
         width: 90px; /* Same size as superhero1.png for consistency */
         height: auto;
+    }
+
+    /* Contact Section Responsive Adjustments */
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-image {
+        max-width: 100%;
+    }
+
+    .hireme-img {
+        width: 100%;
+    }
+
+    #contact-form {
+        width: 100%;
     }
 }
 
