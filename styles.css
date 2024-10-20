@@ -253,6 +253,30 @@ nav.scrolled {
     background: #e67e22; /* Slightly darker orange on hover */
 }
 
+/* Superhero Image in Hero Section */
+.superhero-img {
+    display: block;
+    margin: 0 auto 20px auto; /* Centers the image and adds space below */
+    transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out; /* Smooth transition */
+    opacity: 1;
+}
+
+/* Size Classes for Hero Image */
+.superhero1-size {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+}
+
+.hireme-size {
+    width: 350px; /* Same as superhero1.png */
+    height: auto;
+}
+
+.superhero2-size {
+    width: 150px; /* Same as superhero1.png */
+    height: auto;
+}
+
 /* About Section */
 .about-section h2 {
     text-align: center;
@@ -712,23 +736,23 @@ nav.scrolled {
     position: fixed;
     bottom: 40px;
     right: 40px;
-    background: #FF8C00;
+    background: transparent; /* Remove background */
     border: none;
-    padding: 15px;
-    border-radius: 50%;
-    color: #fff;
+    padding: 0; /* Remove padding */
     cursor: pointer;
     display: none;
-    transition: background 0.3s;
+    transition: opacity 0.3s;
     z-index: 1000;
 }
 
 #scrollToTopBtn:hover {
-    background: #e67e22; /* Slightly darker orange on hover */
+    opacity: 0.8; /* Slight opacity change on hover */
 }
 
-#scrollToTopBtn i {
-    font-size: 1.2rem;
+.scroll-top-img {
+    width: 150px; /* Same size as superhero1.png */
+    height: auto;
+    object-fit: contain;
 }
 
 /* Responsive Styles */
@@ -827,6 +851,23 @@ nav.scrolled {
         width: 100%;
         height: auto;
         max-width: 100%;
+    }
+
+    /* Superhero Image Responsive Adjustments */
+    .superhero-img {
+        width: 100px; /* Smaller size for mobile */
+        margin-bottom: 15px;
+    }
+
+    /* Scroll to Top Button */
+    #scrollToTopBtn {
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .scroll-top-img {
+        width: 150px; /* Same size as superhero1.png for consistency */
+        height: auto;
     }
 }
 
