@@ -997,3 +997,65 @@ nav.scrolled {
         height: auto;
     }
 }
+
+/* What I Can Do For You Section */
+.services-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.services-section h2::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #FF8C00;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.service-item {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 300px;
+    max-width: 400px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 140, 0, 0.5); /* Orange shadow */
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #FF8C00;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* Icon Styling within Services */
+.services-section .service-item i {
+    color: #FF8C00;
+    font-size: 1.2rem;
+}
